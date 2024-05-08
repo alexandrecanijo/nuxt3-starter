@@ -15,7 +15,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "outdated": "npx update-browserslist-db@latest --update-db && npx ncu",
-    "updated": "npx ncu -u"
+    "updated": "npx ncu -u",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "nuxt": "^3.11.2",
@@ -23,6 +25,9 @@
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "npm-check-updates": "^16.14.20"
+    "@nuxt/eslint": "^0.3.10",
+    "eslint": "^8.57.0",
+    "npm-check-updates": "^16.14.20",
+    "vite-plugin-eslint2": "^4.4.0"
   }
 }
