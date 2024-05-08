@@ -1,0 +1,12 @@
+*.spec.js
+*.spec.js.snap
+__snapshots__
+*.mock.js
+*.mock.json
+src/pages/**/*.js
+src/test/*
+src/tests/*
+coverage
+.vscode
+.info
+mocks/*
