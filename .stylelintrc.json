@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recommended-vue"
+  ],
+
+  "customSyntax": "postcss-html",
+
+  "rules": {
+    "unit-allowed-list": ["px", "rem", "%", "vw", "vh", "s", "ms", "deg", "fr"],
+    "no-invalid-position-at-import-rule": null,
+    "media-query-no-invalid": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["function", "if", "each", "include", "mixin", "return", "else", "use"]
+      }
+    ],
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": ["xrem"]
+      }
+    ]
+  },
+
+  "overrides": [
+    {
+      "files": ["**/*.(scss|sass|css|html|vue)"],
+      "customSyntax": "postcss-scss"
+    },
+    {
+      "files": ["**/*.(html|vue)"],
+      "customSyntax": "postcss-html"
+    }
+  ],
+
+  "ignoreFiles": ["node_modules/**", ".nuxt/**", ".output/**", "dist/**", "coverage/**", "__snapshots__/**"]
+}
