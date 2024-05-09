@@ -9,7 +9,7 @@
   "customSyntax": "postcss-html",
 
   "rules": {
-    "unit-allowed-list": ["px", "rem", "%", "vw", "vh", "s", "ms", "deg", "fr"],
+    "unit-allowed-list": ["px", "rem", "%", "vw", "vh", "vmax", "vmin", "s", "ms", "deg", "fr"],
     "no-invalid-position-at-import-rule": null,
     "media-query-no-invalid": null,
     "at-rule-no-unknown": [

@@ -21,9 +21,9 @@ export default withNuxt({
         math: 'always',
       },
     ],
-    '@stylistic/indent': ['error', 2],
-    '@stylistic/quotes': ['error', 'single'],
-    '@stylistic/comma-dangle': [
+    'stylistic/indent': ['error', 2],
+    'stylistic/quotes': ['error', 'single'],
+    'stylistic/comma-dangle': [
       'error',
       {
         arrays: 'always-multiline',
@@ -36,11 +36,24 @@ export default withNuxt({
         tuples: 'always-multiline',
       },
     ],
-    '@stylistic/no-irregular-whitespace': 0,
-    '@stylistic/semi': ['error', 'always'],
-    '@stylistic/arrow-parens': ['error', 'always'],
-    '@stylistic/brace-style': ['error', '1tbs'],
-    '@stylistic/quote-props': ['error', 'consistent'],
+    'stylistic/no-irregular-whitespace': 0,
+    'stylistic/semi': ['error', 'always'],
+    'stylistic/arrow-parens': ['error', 'always'],
+    'stylistic/brace-style': ['error', '1tbs'],
+    'stylistic/quote-props': ['error', 'consistent'],
+    'stylistic/max-len': [
+      'error',
+      {
+        code: 120,
+        tabWidth: 2,
+        ignoreComments: true,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
+      },
+    ],
   },
 
   ignores: [
