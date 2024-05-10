@@ -23,7 +23,13 @@
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write --list-different .",
     "lint": "npm run lint:js && npm run lint:css",
-    "lint:fix": "npm run lint:prettier:fix && npm run lint:css:fix && npm run lint:js:fix"
+    "lint:fix": "npm run lint:prettier:fix && npm run lint:css:fix && npm run lint:js:fix",
+    "test": "npm run test:unit --run",
+    "test:cov": "vitest --config ./vitest.config.js --coverage.enabled --run",
+    "test:unit": "vitest --config ./vitest.config.js --run",
+    "test:unit:watch": "vitest --config ./vitest.config.js --watch --coverage.enabled --update",
+    "test:unit:cov": "vitest --config ./vitest.config.js --coverage.enabled",
+    "test:unit:update": "vitest --config ./vitest.config.js --update --run"
   },
   "dependencies": {
     "nuxt": "^3.11.2",
@@ -32,9 +38,15 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.3.12",
+    "@nuxt/test-utils": "^3.12.1",
     "@stylistic/eslint-plugin": "^2.1.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vue/test-utils": "^2.4.6",
     "eslint": "^8.57.0",
+    "eslint-plugin-vitest": "^0.5.4",
+    "happy-dom": "^14.10.1",
     "npm-check-updates": "^16.14.20",
+    "playwright-core": "^1.44.0",
     "postcss-html": "^1.7.0",
     "postcss-scss": "^4.0.9",
     "prettier": "^3.2.5",
@@ -43,6 +55,8 @@
     "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-standard-scss": "^13.1.0",
-    "vite-plugin-eslint2": "^4.4.0"
+    "unplugin-auto-import": "^0.17.6",
+    "vite-plugin-eslint2": "^4.4.0",
+    "vitest": "^1.6.0"
   }
 }

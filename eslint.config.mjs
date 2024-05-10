@@ -1,8 +1,11 @@
 import stylistic from '@stylistic/eslint-plugin';
 import withNuxt from './.nuxt/eslint.config.mjs';
+import vitest from 'eslint-plugin-vitest';
 
 export default withNuxt({
-  plugins: { stylistic },
+  plugins: { vitest, stylistic },
+
+  languageOptions: { globals: { ...vitest.environments.env.globals } },
 
   rules: {
     'no-console': 'off',

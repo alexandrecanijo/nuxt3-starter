@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`can mount the component 1`] = `
+"<div data-v-0412f3bd="" class="overlay">
+  <div data-v-0412f3bd=""></div>
+</div>"
+`;

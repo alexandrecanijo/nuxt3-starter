@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`can mount the component 1`] = `
+"<footer data-v-349c2468="">
+  <div data-v-349c2468="" class="wrapper">
+    <div data-v-349c2468="" class="inner-wrapper"><span data-v-349c2468="">Footer</span></div>
+  </div>
+</footer>"
+`;

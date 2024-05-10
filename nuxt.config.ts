@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   srcDir: 'src/',
 
-  modules: ['@nuxt/eslint'],
+  modules: ['@nuxt/eslint', '@nuxt/test-utils/module'],
   eslint: {
     checker: {
       configType: 'flat',
