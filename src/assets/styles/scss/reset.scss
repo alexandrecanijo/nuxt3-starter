@@ -1,0 +1,138 @@
+/* Default HTML styles */
+html {
+  font-size: 100%;
+  word-spacing: 1px;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+
+/* Scroll behavior */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Body Defaults */
+body {
+  font-size: 16px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizespeed;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+figcaption,
+fieldset,
+legend,
+textarea,
+pre,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul li,
+ol li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* Default styles for links */
+a {
+  text-decoration-skip-ink: auto;
+  background-color: transparent;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Image Styles */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Embed & Object Styles */
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements styling */
+input,
+button,
+optgroup,
+textarea,
+select {
+  font: inherit;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+/* Remove smooth scroll, all animations and transitions based on user settings */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

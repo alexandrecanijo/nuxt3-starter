@@ -1,0 +1,29 @@
+// Functions
+@use 'sass:math';
+
+@function xrem($size) {
+  $remsize: math.div($size, 16px);
+
+  @return #{$remsize}rem;
+}
+
+// Typography
+$font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Noto Sans', helvetica, 'Helvetica Neue', arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+
+// Media queries
+$small: 640px;
+$medium: 768px;
+$large: 1024px;
+$ultra: 1280px;
+
+// Z-index
+$zindex-100: 100;
+$zindex-200: 200;
+$zindex-300: 300; // Header & Footer
+$zindex-400: 400;
+$zindex-500: 500; // Overlay (only to be used by the overlay)
+$zindex-600: 600;
+$zindex-700: 700;
+$zindex-800: 800; // Sidebar/menus
+$zindex-900: 900;

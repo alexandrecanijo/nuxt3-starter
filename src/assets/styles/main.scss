@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+html {
+  font-family: $font-family;
+  background: var(--main-bg-color);
+}
+
+body {
+  color: var(--text-primary-color);
+  position: static;
+  overflow-y: scroll;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+  .inner-wrapper {
+    // @TODO: Remove after debug
+    background: #fff;
+  }
+}
+
+@media (min-width: $small) {
+  body {
+    font-size: xrem(16px);
+  }
+
+  .wrapper {
+    max-width: $small;
+  }
+}
+
+@media (min-width: $medium) {
+  body {
+    font-size: xrem(18px);
+  }
+
+  .wrapper {
+    max-width: $medium;
+  }
+}
+
+@media (min-width: $large) {
+  body {
+    font-size: xrem(20px);
+  }
+
+  .wrapper {
+    max-width: $large;
+  }
+}
+
+@media (min-width: $ultra) {
+  body {
+    font-size: xrem(22px);
+  }
+
+  .wrapper {
+    max-width: $ultra;
+  }
+}
+
+.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--overlay-bg-color);
+}

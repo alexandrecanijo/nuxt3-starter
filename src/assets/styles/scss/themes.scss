@@ -1,0 +1,31 @@
+:root {
+  --main-bg-color: #fff;
+
+  // Typography
+  --text-primary-color: #000;
+  --title-primary-color: #353535;
+
+  // Overlay
+  --overlay-bg-color: #000000da;
+
+  // Links
+  --link-default-color: #0d599e;
+  --link-active-color: #0b3052;
+  --link-outline-color: #9e231c;
+}
+
+.dark-mode {
+  --main-bg-color: #000;
+
+  // Typography
+  --text-primary-color: #fff;
+  --title-primary-color: #ddd;
+
+  // Overlay
+  --overlay-bg-color: #000000da;
+
+  // Links
+  --link-default-color: #ffab19;
+  --link-active-color: #ce8400;
+  --link-outline-color: #ce8400;
+}
