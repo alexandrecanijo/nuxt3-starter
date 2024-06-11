@@ -37,7 +37,7 @@
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.3.12",
+    "@nuxt/eslint": "^0.3.13",
     "@nuxt/test-utils": "^3.13.1",
     "@stylistic/eslint-plugin": "^2.1.0",
     "@vitest/coverage-v8": "^1.6.0",
