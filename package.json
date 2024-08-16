@@ -32,7 +32,6 @@
     "test:unit:update": "vitest --config ./vitest.config.js --update --run"
   },
   "dependencies": {
-    "nuxt": "^3.12.4",
     "vue": "^3.4.38",
     "vue-router": "^4.4.3"
   },
@@ -46,6 +45,7 @@
     "eslint-plugin-vitest": "^0.5.4",
     "happy-dom": "^14.12.3",
     "npm-check-updates": "^16.14.20",
+    "nuxt": "^3.12.4",
     "playwright-core": "^1.46.1",
     "postcss-html": "^1.7.0",
     "postcss-scss": "^4.0.9",
